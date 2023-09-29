@@ -7,7 +7,6 @@ const marvel = {
         fetch(URL)
             .then((response) => response.json())
             .then((json) => {
-                console.log(json, 'RESPONSE.JSON')
                 for (const characters of json.data.results) {
                     let urlCharacters = characters.urls[0].url;
                     htmlContent +=`
